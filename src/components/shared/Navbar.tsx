@@ -58,7 +58,7 @@ const Navbar = () => {
             <Link
               href={link.url}
               key={index}
-              className="flex items-center justify-center flex-col"
+              className="flex items-center justify-center flex-col hover:scale-[1.04] transition-all ease-in-out"
             >
               <Image
                 src={link.path}

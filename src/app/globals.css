@@ -77,4 +77,14 @@
   body {
     @apply bg-background text-foreground;
   }
+
+
+  /* Individual and organization button clicked classes  */
+  .clicked{
+    @apply bg-[#B9E390] text-black hover:bg-[#B9E390] hover:text-black;
+  }
+
+  .not-clicked{
+    @apply bg-transparent border-[0.5px] border-black text-[#B9E390];
+  }
 }
