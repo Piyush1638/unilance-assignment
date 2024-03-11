@@ -1,3 +1,4 @@
+import CollabsAndSponsorships from "@/components/sections/CollabsAndSponsorships";
 import Faq from "@/components/sections/Faq";
 import HelpUsToDoMore from "@/components/sections/HelpUsToDoMore";
 import YourInformation from "@/components/sections/YourInformation";
@@ -12,9 +13,9 @@ export default function Home() {
           <hr className="h-px bg-[#00000040] border-0 shadow-lg text-gray-500" />
           <YourInformation />
         </div>
-        <div>
+        <div className="flex tablet:flex-row laptop:flex-col flex-col gap-3">
           <Faq/>
-          
+          <CollabsAndSponsorships/>
         </div>
       </div>
     </main>

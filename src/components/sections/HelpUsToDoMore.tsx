@@ -54,8 +54,8 @@ const HelpUsToDoMore = () => {
         Help us to do more
       </h1>
       <p className="text-sm font-light my-4 leading-5">
-        We'll get right to the point: we're asking you to help support Uniford.
-        We're a nonprofit that relies on support from people like you. If
+        We&npos;ll get right to the point: we&npos;re asking you to help support Uniford.
+        We&npos;re a nonprofit that relies on support from people like you. If
         everyone reading this gives $2 monthly, Uniford can continue to thrive
         for years. Please help keep Uniford free, for anyone, anywhere forever.
       </p>
@@ -69,7 +69,7 @@ const HelpUsToDoMore = () => {
       </p>
       <p className="italic tablet:block hidden  underline font-semibold text-sm">
         What to know about tax benefits?{" "}
-        <span className="no-underline">CHECK FAQ's</span>
+        <span className="no-underline">CHECK FAQ&npos;s</span>
       </p>
 
       {/* Choose an organization or individual */}

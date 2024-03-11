@@ -59,7 +59,7 @@ const Faq = () => {
   ];
   return (
     <section className="bg-[#ffffff] rounded-3xl tablet:rounded-xl px-5 py-5 flex flex-col w-full min-w-[312px] tablet:w-[349px]">
-      <h3 className="tablet:text-4xl text-4 font-semibold">FAQ's</h3>
+      <h3 className="tablet:text-4xl text-4 font-semibold">FAQ&npos;s</h3>
       <div className="my-3">
         <ul className="flex flex-col gap-1">
           {faqs.map((faq, index) => (
