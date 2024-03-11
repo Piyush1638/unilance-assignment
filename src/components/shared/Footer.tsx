@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { IoMdArrowDropup } from "react-icons/io";
+
 
 
 const Footer = () => {
@@ -76,7 +78,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-8">
-            <Link href="#">Back to top ^</Link>
+            <Link className="flex items-center" href="#">Back to top <IoMdArrowDropup className="text-2xl"/> </Link>
             <div className="ps-8">
               <p>Doner Support</p>
               <p>donate@uniford.com</p>

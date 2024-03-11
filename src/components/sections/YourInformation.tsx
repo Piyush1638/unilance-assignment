@@ -31,6 +31,8 @@ const YourInformation = () => {
     (data: any) => data.individuaOrOrganizationButton
   );
 
+  const amount = useSelector((data: any) => data.selectedAmount);
+
   const [selectedButton, setSelectedButton] = React.useState<string | null>(
     "UPI"
   );
@@ -52,7 +54,7 @@ const YourInformation = () => {
         <div className="flex flex-col tablet:w-1/2 w-full">
           <h4 className="font-normal">Monthly Donation</h4>
           <h3 className="text-xl mt-3 font-medium">
-            ₹ 3000 <span className="text-[8px]">Rs</span>
+            ₹ {amount} <span className="text-[8px]">Rs</span>
           </h3>
           <CheckboxWithText
             label="Yes, I'll cover the transaction fees on Uniford
@@ -70,7 +72,7 @@ const YourInformation = () => {
             onClick={() => handleButtonClick("UPI")}
             className={
               selectedButton === "UPI"
-                ? "bg-[#B9E390] text-white text-sm py-2"
+                ? "bg-[#B9E390] text-white text-sm py-2 shadow-md shadow-gray-400"
                 : "text-sm py-2"
             }
           >
@@ -80,7 +82,7 @@ const YourInformation = () => {
             onClick={() => handleButtonClick("Credit Card")}
             className={
               selectedButton === "Credit Card"
-                ? "bg-[#B9E390] text-white text-sm py-2"
+                ? "bg-[#B9E390] text-white text-sm py-2 shadow-md shadow-gray-400"
                 : "text-sm py-2"
             }
           >
@@ -90,7 +92,7 @@ const YourInformation = () => {
             onClick={() => handleButtonClick("Bank Transfer")}
             className={
               selectedButton === "Bank Transfer"
-                ? "bg-[#B9E390] text-white text-sm py-2"
+                ? "bg-[#B9E390] text-white text-sm py-2 shadow-md shadow-gray-400"
                 : "text-sm py-2"
             }
           >

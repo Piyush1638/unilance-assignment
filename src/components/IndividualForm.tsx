@@ -17,7 +17,8 @@ const IndividualForm = () => {
           <input
             type="text"
             id="name"
-            className="tablet:w-[210.76px] laptop:w-[264px] border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
+            placeholder="Name"
+            className="tablet:placeholder:opacity-0 placeholder:opacity-100 placeholder:text-sm placeholder:text-[#C9C9C9] tablet:w-[210.76px] laptop:w-[264px] tablet:h-7 h-10 border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -30,11 +31,12 @@ const IndividualForm = () => {
           <input
             type="text"
             id="name"
-            className=" tablet:w-[210.76px] laptop:w-[264px] border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
+            placeholder="Second Name"
+            className="tablet:placeholder:opacity-0 placeholder:opacity-100 placeholder:text-sm placeholder:text-[#C9C9C9] tablet:w-[210.76px] laptop:w-[264px] tablet:h-7 h-10 border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
           />
         </div>
       </div>
-      <div className="relative bottom-3 flex items-center gap-2">
+      <div className="relative bottom-3 items-center gap-2 tablet:flex hidden">
         <CheckboxWithText
           htmlfor="hide-name"
           label="Hide my name from public"
@@ -53,9 +55,9 @@ const IndividualForm = () => {
           type="email"
           id="email"
           placeholder="Mail ID"
-          className="tablet:w-[210.76px] laptop:w-[264px] border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
+          className="tablet:placeholder:opacity-0 placeholder:opacity-100 placeholder:text-sm placeholder:text-[#C9C9C9] tablet:w-[210.76px] laptop:w-[264px] tablet:h-7 h-10 border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
         />
-        <p className="text-[10px] font-normal">
+        <p className="text-[10px] font-normal px-4 tablet:px-0">
           your reciept will be emailed here
         </p>
       </div>
@@ -73,7 +75,8 @@ const IndividualForm = () => {
           <input
             type="number"
             id="number"
-            className="tablet:w-[210.76px] laptop:w-[264px] border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
+            placeholder="Phone Number"
+            className="tablet:placeholder:opacity-0 placeholder:opacity-100 placeholder:text-sm placeholder:text-[#C9C9C9] tablet:w-[210.76px] laptop:w-[264px] tablet:h-7 h-10 border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
           />
         </div>
       </div>
