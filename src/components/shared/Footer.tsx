@@ -70,7 +70,7 @@ const Footer = () => {
             <p className="text-base font-normal whitespace-nowrap">In India for the world</p>
           </div>
           <div className="flex flex-col relative top-12">
-            <hr className="h-px my-2 min-w-[541px] bg-[#103310] border-0 shadow-lg text-gray-500" />
+            <hr className="h-px my-2  bg-[#103310] border-0 shadow-lg text-gray-500" />
             <div className="flex items-center justify-center laptop:gap-8 gap-4">
               {socials.map((social,index)=>(
                 <SocialsLinks key={index} url={social.url} path={social.path} name={social.name} />
