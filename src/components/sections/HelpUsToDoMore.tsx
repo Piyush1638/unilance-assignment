@@ -3,10 +3,9 @@ import Link from "next/link";
 import React from "react";
 import {
   setIndividualOrOrganizationButton,
-  setSelectedFrequency,
   setAmountSelected,
 } from "@/app/redux/slice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { CheckboxWithText } from "../CheckboxWithText";
 
 const HelpUsToDoMore = () => {
@@ -28,12 +27,6 @@ const HelpUsToDoMore = () => {
     dispatch(setIndividualOrOrganizationButton(individualOrOrganization));
   };
 
-  // This will handle the frequency i.e. monthly, quaterly or yearly
-  const handleFrequencyChange = (event: any) => {
-    setSelectedDurationFrequency(event.target.value);
-    dispatch(setSelectedFrequency(event.target.value));
-  };
-  const frequency = useSelector((data: any) => data.selectedFrequency);
 
   // This will handle the amount selected by user and save it in redux store
   const handleButtonClick = (amount: string) => {
@@ -42,7 +35,7 @@ const HelpUsToDoMore = () => {
   };
 
   return (
-    <section className="laptop:px-16 tablet:px-10 px-5 laptop:pt-16 laptop:pb-4 tablet:py-10 py-5 flex flex-col w-full tablet:w-[570px] laptop:w-[714px]">
+    <section className="laptop:px-16 tablet:px-10 px-5 laptop:pt-16 laptop:pb-4 tablet:py-10 py-5 flex flex-col w-[312px] tablet:w-[570px] laptop:w-[714px]">
       <h1 className="font-medium laptop:text-5xl tablet:text-4xl text-[20px]">
         Help us to do more
       </h1>
@@ -104,7 +97,8 @@ const HelpUsToDoMore = () => {
             name="frequency"
             id="frequency"
             value={selectedDurationFrequency}
-            onChange={handleFrequencyChange}
+            onChange={(event)=>setSelectedDurationFrequency(event.target.value)
+            }
             className="tablet:w-[264px] tablet:h-10 w-[210.76px] h-7 border-[0.5px] border-black rounded-[5px] px-2 outline-none"
           >
             <option value="monthly">Monthly</option>
@@ -118,7 +112,7 @@ const HelpUsToDoMore = () => {
       {/* Choose a monthly amount */}
       <div className="mt-4">
         <label className="font-normal text-sm">
-          Choose a {frequency} amount
+          Choose a {selectedDurationFrequency} amount
         </label>
         <div className="flex tablet:items-center justify-start tablet:flex-row flex-col px-5 tablet:gap-3  gap-5 mt-3">
           <div className="flex items-center gap-3 laptop:pe-5 ">

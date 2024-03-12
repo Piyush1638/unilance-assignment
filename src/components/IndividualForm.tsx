@@ -5,9 +5,9 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const IndividualForm = () => {
   return (
-    <form className="my-8 flex flex-col gap-3">
+    <form className="my-3 flex flex-col gap-2">
       <div className="flex tablet:items-center tablet:flex-row flex-col gap-3">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <label
             htmlFor="name"
             className="text-sm hidden tablet:block font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -21,7 +21,7 @@ const IndividualForm = () => {
             className="tablet:placeholder:opacity-0 placeholder:opacity-100 placeholder:text-sm placeholder:text-[#C9C9C9] tablet:w-[210.76px] laptop:w-[264px] tablet:h-7 h-10 border-[0.5px] border-black tablet:rounded-md rounded-3xl px-4 py-2 mt-1 outline-none"
           />
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <label
             htmlFor="name"
             className="text-sm hidden tablet:block font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -44,7 +44,7 @@ const IndividualForm = () => {
         />
         <IoIosInformationCircleOutline className="cursor-pointer"/>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-1">
         <label
           htmlFor="email"
           className="text-sm hidden tablet:block font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
@@ -61,11 +61,11 @@ const IndividualForm = () => {
           your reciept will be emailed here
         </p>
       </div>
-      <div className="gap-3 flex tablet:flex-col flex-col-reverse my-2 tablet:my-0">
+      <div className="gap-2 flex tablet:flex-col flex-col-reverse my-2 tablet:my-0">
         <p className="text-sm">
           By donating you agree our terms and conditions.
         </p>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-1">
           <label
             htmlFor="email"
             className="text-sm hidden tablet:block font-normal leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
